@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useEffect, useState } from "react";
+import { getUser } from "./services/user.service";
 
 function App() {
+  getUser();
   return (
     <div className="App">
       <header className="App-header">
