@@ -1,0 +1,7 @@
+name: GitHub Actions Example
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Ура! Я запустился на ${{ github.event_name }}."
+      - run: echo "Я работаю на ОС - ${{ runner.os }}"
